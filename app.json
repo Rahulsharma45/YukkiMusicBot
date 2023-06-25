@@ -6,6 +6,8 @@
     "python3",
     "telegram",
     "bot",
+    "Yukki",
+    "YukkiMusicBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -68,9 +70,14 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamYukki/YukkiMusicBot",
+        "value": "https://github.com/Mogambo-XD/YukkiMusicBot",
         "required": true
       },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
+      }
     },
     "buildpacks": [
           {
@@ -86,7 +93,7 @@
       "formation": {
           "worker": {
               "quantity": 1,
-              "size": "eco"
+              "size": "free"
           }
       }
   }
